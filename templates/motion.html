@@ -1,0 +1,1231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">ABOUT</a></li>
+        <li><a href="/dataview">Descriptive overview</a></li>
+				<li><a href="/motion">Interactive overview</a></li>
+        <li><a href="/Analytical_view">Analytical overview</a></li>
+        <li><a href="/contact_us">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<head>
+<title>MotionChartIDc117728e932</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+color: #444444;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 75%;
+}
+a {
+color: #4D87C7;
+text-decoration: none;
+}
+
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+.dropbtn {
+    background-color: #303030;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+#myInput {
+    border-box: box-sizing;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b9dd8d;
+    min-width: 230px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+
+
+ html { height: 100% ; font-size: small} 
+ body { height: 100%; margin: 0px; padding: 0px }
+
+ #Map { float: left;
+ width:800px;
+ height:600px; }
+
+ #cBoxes {float: left;
+width:200px;
+height: 600px;
+overflow:auto} 
+
+</style>
+</head>
+<body>
+<!-- MotionChart generated in R 3.2.3 by googleVis 0.6.1 package -->
+<!-- Thu Dec 22 21:17:32 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+// jsData 
+function gvisDataMotionChartIDc117728e932 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+[
+"ARE",
+2012,
+"AE",
+"H",
+7.22,
+null,
+35933.05957,
+null,
+17.76,
+16552.26,
+null,
+0.5228,
+28.8003,
+0.8656,
+0.9383,
+0.9405
+],
+[
+"ALB",
+2012,
+"AL",
+"UM",
+5.51,
+null,
+4277.14331,
+28.96,
+null,
+3258.95,
+13.3,
+0.5085,
+29.1303,
+0.9252,
+0.6346,
+0.5021
+],
+[
+"AUT",
+2012,
+"AT",
+"H",
+7.4,
+10.71,
+47951.55678,
+30.48,
+26.97,
+25295.89,
+19.9,
+0.4935,
+27.1861,
+0.9773,
+0.9838,
+0.9887
+],
+[
+"AUS",
+2012,
+"AU",
+"H",
+7.2,
+13.18,
+53321.87934,
+null,
+16.51,
+29669.34,
+null,
+0.4977,
+25.7227,
+0.8822,
+0.9777,
+0.9678
+],
+[
+"BEL",
+2012,
+"BE",
+"H",
+6.94,
+null,
+44305.95815,
+27.59,
+38.63,
+22788.9,
+39.8,
+0.5521,
+27.1861,
+0.9516,
+0.98,
+0.9832
+],
+[
+"BGR",
+2012,
+"BG",
+"UM",
+4.22,
+10.69,
+6960.202455,
+36.01,
+20.01,
+4564.29,
+26.6,
+0.4772,
+26.829,
+0.7329,
+0.9577,
+0.9609
+],
+[
+"BRA",
+2012,
+"BR",
+"UM",
+6.66,
+15.57,
+11557.26737,
+52.67,
+23.09,
+7124.96,
+12.7,
+0.5226,
+27.7253,
+0.774,
+0.7012,
+0.7307
+],
+[
+"CAN",
+2012,
+"CA",
+"H",
+7.42,
+null,
+48721.1803,
+null,
+null,
+27557.07,
+50.6,
+0.5286,
+27.0227,
+0.9208,
+0.9741,
+0.9809
+],
+[
+"CHE",
+2012,
+"CH",
+"H",
+7.78,
+16.1,
+74823.6613,
+31.64,
+26.08,
+41060.5,
+34.3,
+0.5542,
+26.2614,
+0.9681,
+0.9825,
+0.9934
+],
+[
+"QCN",
+2012,
+"CH",
+"UM",
+5.09,
+null,
+5275.045788,
+42.16,
+null,
+1851.99,
+null,
+0.5163,
+28.0919,
+0.9123,
+0.8237,
+0.8429
+],
+[
+"CHL",
+2012,
+"CL",
+"H",
+6.6,
+19.28,
+13963.6654,
+null,
+18.07,
+8526.57,
+null,
+0.4915,
+28.017,
+0.827,
+0.9034,
+0.8174
+],
+[
+"CRI",
+2012,
+"CR",
+"UM",
+7.27,
+23.5,
+8572.714408,
+48.61,
+24.73,
+5477.24,
+24.8,
+0.515,
+29.4114,
+0.8365,
+0.7711,
+0.6839
+],
+[
+"CZE",
+2012,
+"CZ",
+"H",
+6.33,
+9.74,
+19902.09382,
+26.13,
+25.39,
+9583.8,
+20.1,
+0.5147,
+24.2377,
+0.9368,
+0.9836,
+0.9826
+],
+[
+"DEU",
+2012,
+"DE",
+"H",
+6.7,
+11.22,
+44223.65407,
+null,
+23.19,
+24370.74,
+28.3,
+0.5,
+26.0311,
+0.9822,
+0.9978,
+0.9933
+],
+[
+"DNK",
+2012,
+"DK",
+"H",
+7.52,
+null,
+57811.73468,
+29.08,
+null,
+27571.52,
+31.7,
+0.5192,
+27.2162,
+0.9061,
+0.996,
+0.999
+],
+[
+"EST",
+2012,
+"EE",
+"H",
+5.36,
+12.06,
+16677.98745,
+33.15,
+26.53,
+8338.93,
+37.7,
+0.5276,
+25.2828,
+0.94,
+0.91,
+0.9968
+],
+[
+"ESP",
+2012,
+"ES",
+"H",
+6.29,
+9.23,
+29508.78223,
+35.89,
+null,
+16508.57,
+35.2,
+0.5005,
+26.66,
+0.9498,
+0.9703,
+0.9612
+],
+[
+"FIN",
+2012,
+"FI",
+"H",
+7.42,
+12.81,
+46280.31161,
+27.12,
+null,
+25153.22,
+38.2,
+0.557,
+25.0445,
+0.9506,
+0.9826,
+0.9951
+],
+[
+"GBR",
+2012,
+"GB",
+"H",
+6.88,
+null,
+38929.30846,
+32.57,
+null,
+24860.98,
+38.1,
+0.4963,
+27.9939,
+0.8806,
+0.9784,
+0.9885
+],
+[
+"GRC",
+2012,
+"GR",
+"H",
+5.1,
+null,
+22831.88609,
+36.68,
+null,
+15609.17,
+29.1,
+0.4904,
+25.8347,
+0.8595,
+0.9339,
+0.8939
+],
+[
+"HKG",
+2012,
+"HK",
+"H",
+null,
+18.65,
+34064.87662,
+null,
+17.11,
+22132,
+25.5,
+0.5023,
+26.2862,
+0.814,
+0.99,
+0.9954
+],
+[
+"HRV",
+2012,
+"HR",
+"H",
+6.03,
+null,
+13640.34549,
+32.51,
+null,
+8019.19,
+21,
+0.5139,
+25.0776,
+0.867,
+0.9515,
+0.9598
+],
+[
+"HUN",
+2012,
+"HU",
+"UM",
+4.68,
+null,
+13118.91552,
+30.55,
+19.67,
+6758.46,
+24.7,
+0.5236,
+25.9186,
+0.9336,
+0.9529,
+0.9465
+],
+[
+"IRL",
+2012,
+"IE",
+"H",
+6.96,
+13.83,
+49295.42798,
+32.52,
+25.98,
+22371.78,
+41.5,
+0.474,
+27.2135,
+0.9097,
+0.9583,
+0.9878
+],
+[
+"ISL",
+2012,
+"IS",
+"H",
+7.59,
+null,
+42591.41918,
+26.94,
+null,
+22091.4,
+31,
+0.5043,
+28.1894,
+0.9574,
+0.9936,
+1
+],
+[
+"ITA",
+2012,
+"IT",
+"H",
+5.84,
+null,
+34887.37301,
+35.16,
+22.83,
+20914.53,
+18.1,
+0.4827,
+25.5983,
+0.9326,
+0.9793,
+0.9748
+],
+[
+"KAZ",
+2012,
+"KZ",
+"UM",
+5.76,
+null,
+9886.431208,
+27.46,
+null,
+4923.82,
+29.5,
+0.5105,
+28.054,
+0.8859,
+0.6901,
+0.5841
+],
+[
+"LIE",
+2012,
+"LI",
+"H",
+null,
+null,
+null,
+null,
+null,
+null,
+null,
+0.4615,
+26.5641,
+1,
+1,
+1
+],
+[
+"LTU",
+2012,
+"LT",
+"H",
+5.77,
+13.54,
+13684.95794,
+35.15,
+18.54,
+8620.18,
+36.9,
+0.5496,
+26.5993,
+0.9412,
+0.9743,
+0.9577
+],
+[
+"LUX",
+2012,
+"LU",
+"H",
+6.96,
+null,
+100273.8508,
+34.79,
+null,
+34216.32,
+41.3,
+0.5101,
+27.2742,
+0.9634,
+0.9817,
+0.989
+],
+[
+"LVA",
+2012,
+"LV",
+"H",
+5.13,
+12.42,
+12892.85032,
+35.48,
+24.98,
+7894.96,
+31.1,
+0.5683,
+24.8416,
+0.9089,
+0.9501,
+0.9479
+],
+[
+"MAC",
+2012,
+"MO",
+"H",
+null,
+20.22,
+67012.43797,
+null,
+16.62,
+14227.03,
+27,
+0.4779,
+26.5749,
+0.7913,
+0.9801,
+0.987
+],
+[
+"MYS",
+2012,
+"MY",
+"UM",
+5.91,
+null,
+9758.621216,
+null,
+null,
+4895.3,
+24.4,
+0.5599,
+27.4867,
+0.6508,
+0.6951,
+0.6441
+],
+[
+"NLD",
+2012,
+"NL",
+"H",
+7.47,
+11.62,
+50215.95375,
+27.99,
+23.99,
+22110.91,
+32.1,
+0.5,
+25.7007,
+0.972,
+0.9901,
+0.9951
+],
+[
+"NOR",
+2012,
+"NO",
+"H",
+7.68,
+17.45,
+88584.82859,
+25.9,
+null,
+37956.26,
+37.4,
+0.5347,
+27.2469,
+0.9388,
+0.9918,
+0.9939
+],
+[
+"NZL",
+2012,
+"NZ",
+"H",
+7.25,
+19.35,
+35083.10585,
+null,
+24.7,
+20422.13,
+null,
+0.494,
+25.9503,
+0.8846,
+0.9597,
+0.9544
+],
+[
+"PER",
+2012,
+"PE",
+"UM",
+5.82,
+14.38,
+5554.356473,
+45.11,
+10.75,
+3384.21,
+22.9,
+0.5298,
+27.584,
+0.8008,
+0.5325,
+0.4404
+],
+[
+"POL",
+2012,
+"PL",
+"H",
+5.88,
+11.31,
+13427.80296,
+32.39,
+23.82,
+8053.88,
+28.2,
+0.5212,
+25.5338,
+0.9585,
+0.9729,
+0.9526
+],
+[
+"PRT",
+2012,
+"PT",
+"H",
+4.99,
+null,
+21354.5015,
+36.04,
+null,
+13578.73,
+19.5,
+0.5143,
+27.4962,
+0.9564,
+0.9865,
+0.9729
+],
+[
+"QAT",
+2012,
+"QA",
+"H",
+6.61,
+11.81,
+73813.21064,
+null,
+null,
+11739.34,
+null,
+0.5577,
+28.4839,
+0.9002,
+0.901,
+0.8853
+],
+[
+"ROU",
+2012,
+"RO",
+"",
+5.17,
+8.44,
+8518.322919,
+34.88,
+12.37,
+5420.27,
+17.4,
+0.5206,
+26.1618,
+0.9276,
+0.9176,
+0.8472
+],
+[
+"QRS",
+2012,
+"RU",
+"H",
+null,
+11.15,
+11493.41227,
+41.59,
+null,
+6281.5,
+55.5,
+0.502,
+25.4466,
+0.8775,
+0.9605,
+0.9447
+],
+[
+"RUS",
+2012,
+"RU",
+"H",
+null,
+11.15,
+11493.41227,
+41.59,
+null,
+6281.5,
+55.5,
+0.5205,
+25.6375,
+0.8702,
+0.9394,
+0.9408
+],
+[
+"SGP",
+2012,
+"SG",
+"H",
+null,
+20.94,
+49000.7062,
+null,
+null,
+17000.77,
+29.4,
+0.5315,
+27.9359,
+0.7878,
+0.9657,
+0.9746
+],
+[
+"SVN",
+2012,
+"SI",
+"H",
+6.06,
+12.63,
+22854.12529,
+25.59,
+null,
+12747.21,
+29,
+0.4808,
+25.9765,
+0.9498,
+0.9882,
+0.9925
+],
+[
+"SVK",
+2012,
+"SK",
+"H",
+5.91,
+9.79,
+17233.08555,
+26.12,
+18.37,
+9482.86,
+19.8,
+0.4845,
+23.8373,
+0.8994,
+0.9516,
+0.959
+],
+[
+"TUN",
+2012,
+"TN",
+"UM",
+4.46,
+21.62,
+4137.492007,
+null,
+null,
+3015.62,
+null,
+0.4847,
+28.2249,
+0.786,
+0.5983,
+0.5022
+],
+[
+"USA",
+2012,
+"US",
+"H",
+null,
+null,
+49481.15865,
+null,
+22.81,
+33700.27,
+32.5,
+0.5014,
+27.6434,
+0.8975,
+0.9139,
+0.9153
+] 
+];
+data.addColumn('string','country');
+data.addColumn('number','year');
+data.addColumn('string','code2');
+data.addColumn('string','Income_Group');
+data.addColumn('number','Happy_index');
+data.addColumn('number','Exp_Educ_pct');
+data.addColumn('number','GDP_pc');
+data.addColumn('number','GINI');
+data.addColumn('number','Gov_expen_per_student_pct');
+data.addColumn('number','House_final_cons_exp_pc');
+data.addColumn('number','Labor_force_tertiary_educ_pct');
+data.addColumn('number','Gender');
+data.addColumn('number','PersonalMotivation');
+data.addColumn('number','PossessionsStudyStudyPlace');
+data.addColumn('number','PossessionsStudyComputer');
+data.addColumn('number','PossessionsStudyInternet');
+data.addRows(datajson);
+return(data);
+}
+
+// jsDrawChart
+function drawChartMotionChartIDc117728e932() {
+var data = gvisDataMotionChartIDc117728e932();
+var options = {};
+options["width"] = 1000;
+options["height"] = 1000;
+options["state"] = "";
+
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartIDc117728e932')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartIDc117728e932);
+})();
+function displayChartMotionChartIDc117728e932() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDc117728e932"></script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartIDc117728e932" 
+  style="width: 1000; height: 1000;">
+</div>
+ <div><span>Data: combinedData &#8226; Chart ID: <a href="Chart_MotionChartIDc117728e932.html">MotionChartIDc117728e932</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.6.1</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.2.3 (2015-12-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/motionchart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>

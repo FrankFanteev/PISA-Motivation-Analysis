@@ -1,0 +1,269 @@
+<!-- GeoChart generated in R 3.3.2 by googleVis 0.6.1 package -->
+<!-- Thu Dec 22 23:17:16 2016 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataGeoChartID1ddb7055d15e () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"AE",
+0.003424134482
+],
+[
+"AL",
+0.1277493168
+],
+[
+"AT",
+0.05362062132
+],
+[
+"AU",
+0.1293489702
+],
+[
+"BE",
+-0.1117924099
+],
+[
+"BG",
+-0.008864853274
+],
+[
+"BR",
+0.09628666225
+],
+[
+"CA",
+0.1763884328
+],
+[
+"CH",
+0.1814296111
+],
+[
+"CL",
+0.01826665794
+],
+[
+"CR",
+0.04243867498
+],
+[
+"CZ",
+-0.02247047259
+],
+[
+"DE",
+-0.1151844128
+],
+[
+"DK",
+-0.01884471492
+],
+[
+"EE",
+0.2113500418
+],
+[
+"ES",
+0.1266346685
+],
+[
+"FI",
+0.1922163249
+],
+[
+"GB",
+0.08511210079
+],
+[
+"GR",
+0.1872762403
+],
+[
+"HK",
+0.03532440511
+],
+[
+"HR",
+0.3261605304
+],
+[
+"HU",
+0.1106936568
+],
+[
+"IE",
+-0.1383486008
+],
+[
+"IS",
+0.05697215267
+],
+[
+"IT",
+0.0691410096
+],
+[
+"KZ",
+0.03177786353
+],
+[
+"LI",
+0
+],
+[
+"LT",
+0.09867804336
+],
+[
+"LU",
+0.0820708379
+],
+[
+"LV",
+0.2644290781
+],
+[
+"MO",
+0.01961762054
+],
+[
+"MY",
+0.05801753071
+],
+[
+"NL",
+0.04851112895
+],
+[
+"NO",
+0.08349237798
+],
+[
+"NZ",
+0.0640499108
+],
+[
+"PE",
+0.1480531599
+],
+[
+"PL",
+-0.01606324527
+],
+[
+"PT",
+-0.09219345985
+],
+[
+"QA",
+-0.02802042183
+],
+[
+"RO",
+0.1178212749
+],
+[
+"RU",
+0.02805377541
+],
+[
+"SG",
+-0.002510194597
+],
+[
+"SI",
+0.2351717919
+],
+[
+"SK",
+0.194813982
+],
+[
+"TN",
+0.03922568168
+],
+[
+"US",
+0.2147323327
+] 
+];
+data.addColumn('string','country');
+data.addColumn('number','PossessionsStudyStudyPlace');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartGeoChartID1ddb7055d15e() {
+var data = gvisDataGeoChartID1ddb7055d15e();
+var options = {};
+options["width"] = 556;
+options["height"] = 347;
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID1ddb7055d15e')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID1ddb7055d15e);
+})();
+function displayChartGeoChartID1ddb7055d15e() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID1ddb7055d15e"></script>
+ 
+<!-- divChart -->
+  
+<div id="GeoChartID1ddb7055d15e" 
+  style="width: 556; height: 347;">
+</div>

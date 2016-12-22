@@ -32,18 +32,26 @@ def home():
 def render_static(page_name):
     return render_template('%s.html' % page_name)
 
-@app.route('/country/<country_stats>')
-def get_stats(country_stats):
+
+
+def get_country_list(countries):
     cursor = cnx.cursor()
-    query = ('SELECT * FROM school WHERE CNT = %(cnt)s')
-    cursor.execute(query, { 'cnt': country_stats})
+    query = ('SELECT DISTINCT Country_Name FROM countries')
+    cursor.execute(query)
 
-    country = cursor.fetchone()
-
-    country_dict = dict(zip(cursor.column_names, country))
+    country = list(cursor.fetchall())
     cursor.close()
-    return render_template('country.html', name = country_dict['CNT'])
+    return(country)
 
+@app.route('/dataview')
+def index():
+    return render_template("dataview.html")
+
+@app.route('/coefs/<countryid>')
+def get_coefs(countryid):
+    cursor = cnx.cursor()
+    query =('SELECT * FROM countryCoefs WHERE CNT = %(cnt)s')
+    cursor.execute(query, {'cnt': countryid})
 
 
 if __name__ == '__main__':
